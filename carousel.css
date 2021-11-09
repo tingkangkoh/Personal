@@ -1,0 +1,333 @@
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-family: "Nunito", sans-serif;
+  padding-left: 10px;
+}
+
+.first-screen {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  flex-flow: wrap;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 65px;
+}
+
+.btn-2 {
+  width: 300px;
+  height: 80px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  background-color: #141628;
+  font-size: 30px;
+  outline: none;
+  border: 3px solid #e31b6d;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-2:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-2:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #e31b6d;
+}
+
+nav a {
+  color: white;
+}
+
+a:hover {
+  color: #e31b6d;
+}
+.btn-2:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.about-me {
+  height: 50vh;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #e31b6d;
+  width: 75%;
+  margin-bottom: 25vh;
+  position: relative;
+}
+
+.skills {
+  height: 70vh;
+  text-align: center;
+}
+hr {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  border: 0;
+}
+.name {
+  color: #e31b6d;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+}
+.carousel-caption {
+  z-index: 10; /* Since positioning the image, we need to help out the caption */
+  /* position: relative; */
+  top: 480px;
+  /* left: -200px; */
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  /* background-color: #777; */
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 4px; /* The navbar becomes detached from the top, so we round the corners */
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+ul {
+  margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  margin: 0 50px;
+  font-size: 24px;
+}
+
+.project-image {
+  width: 300px;
+  height: 200px;
+}
+
+.project-card {
+  border: 1px solid white;
+  margin: 0 50px;
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+}
+
+body {
+  background-color: #141628;
+  color: white;
+}
+
+.carousel-inner {
+  padding-bottom: 400px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-caption-hold {
+  height: 400px;
+}
+
+.container {
+  width: 700px;
+}
+
+.pill {
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+#projects-title {
+  text-align: center;
+}
+
+.skill-image {
+  height: 150px;
+  width: 150px;
+}
+
+.pink {
+  color: #e31b6d;
+}
+.about-title {
+  font-size: 48px;
+}
+.about-text {
+  font-size: 24px;
+}
+
+.skill-card {
+  background-color: white;
+  height: 155px;
+  width: 155px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  transition: top ease-in 1s;
+  transition: border-width 1s linear;
+  margin: 30px;
+}
+
+.skill-card:hover {
+  top: -20px;
+  border: 7px solid #39a7f1;
+}
+
+.skill-text {
+  display: none;
+  position: absolute;
+  top: -35px;
+  font-size: 20px;
+
+  /* text-align: center; */
+}
+
+.skill-card:hover + .skill-text {
+  display: block;
+  margin-top: 10px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Contact {
+  text-align: center;
+  font-size: 30px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.computer-image {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+.hkust-image {
+  width: 110px;
+  height: 150px;
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
