@@ -1,6 +1,6 @@
-$('.carousel').carousel({
-    interval:false,
-});
+// $('.carousel').carousel({
+//     interval:false,
+// });
 
 new TypeIt("#title", {
     speed: 80,
