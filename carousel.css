@@ -1,7 +1,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   padding-left: 10px;
 }
 
@@ -47,7 +47,7 @@ body {
   right: 50%;
   bottom: 0;
   opacity: 0;
-  content: "";
+  content: '';
   background-color: #e31b6d;
 }
 
@@ -289,7 +289,7 @@ body {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
 .fade-in.appear {
