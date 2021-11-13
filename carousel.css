@@ -299,6 +299,7 @@ body {
 @media only screen and (max-width: 1000px) {
   .about-me {
     height: 60vh;
+    width: 80%;
   }
   .carousel {
     width: 95%;
@@ -308,6 +309,7 @@ body {
 @media only screen and (max-width: 750px) {
   .about-me {
     height: 80vh;
+    width: 90%;
   }
   .skill-card {
     height: 100px;
